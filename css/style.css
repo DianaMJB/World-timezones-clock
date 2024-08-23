@@ -1,6 +1,6 @@
 body {
   font-family: monospace;
-  background-image: url(images/background.jpeg);
+  background-image: url(images/planet.jpeg);
   background-repeat: no-repeat;
   background-position: center bottom;
   height: 100vh;
@@ -8,27 +8,64 @@ body {
 h1 {
   text-align: center;
 }
-.container {
+select {
+  display: inline-block;
+  width: 50%;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+select:hover {
+  border-style: dotted;
+  border-color: rgb(239, 81, 33);
+  color: rgb(239, 81, 33);
+}
+.maine-container {
   display: block;
   margin: 0 auto;
   text-align: center;
   background-color: rgba(240, 248, 255, 0.042);
-  border-radius: 5px;
-  padding: 20px 8px;
-}
-.principal-cities {
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 10px;
-  margin: 8px;
-  background-color: aliceblue;
-}
-.icon {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
+  padding: 0px;
 }
 
+.principal-cities-section {
+  display: flex;
+  overflow: scroll;
+  scrollbar-width: none;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 10px 10px;
+  margin: 18px 12px 10px;
+  background-color: aliceblue;
+  border-radius: 10px;
+}
+.principal-cities-section:hover {
+  cursor: grab;
+}
+.principal-cities-section > div {
+  margin-bottom: 15px;
+}
+.icon img {
+  max-width: 60px;
+  margin-bottom: -10px;
+}
+h2 {
+  margin: 0px 0px 5px;
+  min-width: 120px;
+}
+.time {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  padding: 2px;
+  margin-bottom: 5px;
+  color: rgb(239, 81, 33);
+}
+.date {
+  min-width: 140px;
+}
 footer {
+  background-color: white;
   text-align: center;
+  font-size: 10px;
 }
