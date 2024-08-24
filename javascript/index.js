@@ -21,3 +21,28 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+function selectedTimezone(event) {
+  let timezone = event.target.value;
+  let timezoneName = timezone.replace(`_`, ` `).split("/")[1];
+  let timezoneTime = moment().tz(timezone);
+  let newTimezoneElement = document.querySelector("#principal");
+  newTimezoneElement.innerHTML = `<div class="">
+          <div class="icon">
+            <img src="css/images/location.svg" alt="" />
+            <br/>
+           <br/>
+          </div>
+          <h2>${timezoneName}</h2>
+          <div class="time">${timezoneTime.format(
+            "hh:mm [<strong>] A [</strong>]"
+          )}</div>
+          <div class="date">${timezoneTime.format("MMM Do YYYY")}</div>
+          <br/>
+          <div class="message"><small><em>The city displayed above, represents its entire time zone.</em></small></div>
+        </div>
+  `;
+}
+
+let timezoneSelectElement = document.querySelector("#timezone");
+timezoneSelectElement.addEventListener("change", selectedTimezone);

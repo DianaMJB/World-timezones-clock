@@ -11,14 +11,69 @@
   <body>
     <h1>TICK-TACK WORLD</h1>
     <div class="maine-container">
-      <select name="" id="">
-        <label for="city">Search a city...</label>
-        <option value="">Search a city...</option>
-        <option value="bogota">Bogota</option>
-        <option value="new york">New york</option>
-        <option value="london">London</option>
+      <select name="" id="timezone">
+        <label for="city">Searchin for an specific timezone?</label>
+        <option value="">Choose a timezone...</option>
+        <option value="UTC">UTC - Coordinated Universal Time</option>
+        <option value="Pacific/Honolulu">
+          HST - Hawaii Standard Time, UTC -10:00
+        </option>
+        <option value="America/Anchorage">
+          AKST - Alaska Standard Time, UTC -9:00
+        </option>
+        <option value="America/Los_Angeles">
+          PST - Pacific Standard Time, UTC -8:00
+        </option>
+        <option value="America/Denver">
+          MST - Mountain Standard Time, UTC -7:00
+        </option>
+        <option value="America/Chicago">
+          CST - Central Standard Time, UTC -6:00
+        </option>
+        <option value="America/New_York">
+          EST - Eastern Standard Time, UTC -5:00
+        </option>
+        <option value="America/Caracas">
+          VET - Venezuelan Time, UTC -4:00
+        </option>
+        <option value="America/Sao_Paulo">
+          BRT - Brasilia Time, UTC -3:00
+        </option>
+        <option value="Atlantic/Azores">AZOT - Azores Time, UTC -1:00</option>
+        <option value="Europe/London">
+          GMT - Greenwich Mean Time, UTC ±0:00
+        </option>
+        <option value="Europe/Berlin">
+          CET - Central European Time, UTC +1:00
+        </option>
+        <option value="Africa/Cairo">
+          EET - Eastern European Time, UTC +2:00
+        </option>
+        <option value="Europe/Moscow">
+          MSK - Moscow Standard Time, UTC +3:00
+        </option>
+        <option value="Asia/Dubai">GST - Gulf Standard Time, UTC +4:00</option>
+        <option value="Asia/Karachi">
+          PKT - Pakistan Standard Time, UTC +5:00
+        </option>
+        <option value="Asia/Dhaka">
+          BST - Bangladesh Standard Time, UTC +6:00
+        </option>
+        <option value="Asia/Bangkok">ICT - Indochina Time, UTC +7:00</option>
+        <option value="Asia/Hong_Kong">HKT - Hong Kong Time, UTC +8:00</option>
+        <option value="Asia/Tokyo">JST - Japan Standard Time, UTC +9:00</option>
+        <option value="Australia/Sydney">
+          AEST/AEDT - Australian Eastern Time, UTC +10:00
+        </option>
+        <option value="Pacific/Noumea">
+          NCT - New Caledonia Time, UTC +11:00
+        </option>
+        <option value="Pacific/Auckland">
+          NZST/NZDT - New Zealand Standard Time, UTC +12:00
+        </option>
+        <option value="Pacific/Tongatapu">TOT - Tonga Time, UTC +13:00</option>
       </select>
-      <div class="principal-cities-section">
+      <div class="principal-cities-section" id="principal">
         <div class="new-york">
           <div class="icon">
             <img src="css/images/noun-building-1039858.svg" alt="" />
