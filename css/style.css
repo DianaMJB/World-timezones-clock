@@ -12,7 +12,7 @@ select {
   display: inline-block;
   width: 50%;
   border-radius: 5px;
-  padding: 10px;
+  padding: 8px;
   margin-bottom: 5px;
   font-size: 14px;
 }
@@ -21,6 +21,20 @@ select:hover {
   border-color: rgb(239, 81, 33);
   color: rgb(239, 81, 33);
 }
+#current-location {
+  margin: 15px 10px 5px;
+  padding: 4px;
+  border-radius: 10px;
+  background-color: aliceblue;
+}
+#currentCity {
+  font-weight: 600;
+  font-size: larger;
+}
+#current-time {
+  font-size: large;
+}
+
 .maine-container {
   display: block;
   margin: 0 auto;
@@ -36,7 +50,7 @@ select:hover {
   flex-direction: row;
   justify-content: space-around;
   padding: 20px 10px 10px;
-  margin: 18px 12px 10px;
+  margin: 13px 12px 10px;
   background-color: aliceblue;
   border-radius: 10px;
 }
@@ -56,7 +70,6 @@ h2 {
   min-width: 120px;
 }
 .time {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 17px;
   padding: 2px;
   margin-bottom: 5px;
@@ -69,4 +82,11 @@ footer {
   background-color: white;
   text-align: center;
   font-size: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(239, 81, 33);
+}
+footer a:hover {
+  text-decoration: underline;
 }

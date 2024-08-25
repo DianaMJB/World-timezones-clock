@@ -6,9 +6,16 @@ function updateCityTime(cityClass, timeZone) {
 
   cityDate.innerHTML = cityCurrent.format("MMM Do YYYY");
   cityTime.innerHTML = cityCurrent.format("hh:mm:ss  [<strong>] A [</strong>]");
+
+  if (cityElement.classList.contains("city")) {
+    cityElement.querySelector("span").innerHTML = timeZone
+      .replace(`_`, ` `)
+      .split("/")[1];
+  }
 }
 
 function updateTime() {
+  updateCityTime("city", moment.tz.guess());
   updateCityTime("new-york", "America/New_York");
   updateCityTime("london", "Europe/London");
   updateCityTime("tokyo", "Asia/Tokyo");

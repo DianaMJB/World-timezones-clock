@@ -12,8 +12,8 @@
     <h1>TICK-TACK WORLD</h1>
     <div class="maine-container">
       <select name="" id="timezone">
-        <label for="city">Searchin for an specific timezone?</label>
-        <option value="">Choose a timezone...</option>
+        <label for="city">All world timezones</label>
+        <option value="">All world timezones</option>
         <option value="UTC">UTC - Coordinated Universal Time</option>
         <option value="Pacific/Honolulu">
           HST - Hawaii Standard Time, UTC -10:00
@@ -73,10 +73,19 @@
         </option>
         <option value="Pacific/Tongatapu">TOT - Tonga Time, UTC +13:00</option>
       </select>
+      <div class="city" id="current-location">
+        Your location and timezone:
+        <span id="currentCity"></span>
+        <span class="date"></span>
+        <span class="time" id="current-time"></span>
+      </div>
       <div class="principal-cities-section" id="principal">
         <div class="new-york">
           <div class="icon">
-            <img src="css/images/noun-building-1039858.svg" alt="" />
+            <img
+              src="css/images/noun-building-1039858.svg"
+              alt="new-york-icon"
+            />
           </div>
           <h2>New York</h2>
           <div class="time"></div>
@@ -84,7 +93,7 @@
         </div>
         <div class="london">
           <div class="icon">
-            <img src="css/images/noun-london-1039860.svg" alt="" />
+            <img src="css/images/noun-london-1039860.svg" alt="london-icon" />
           </div>
           <h2>London</h2>
           <div class="time"></div>
@@ -92,7 +101,7 @@
         </div>
         <div class="tokyo">
           <div class="icon">
-            <img src="css/images/noun-tokyo-1039866.svg" alt="" />
+            <img src="css/images/noun-tokyo-1039866.svg" alt="tokyo.icon" />
           </div>
           <h2>Tokyo</h2>
           <div class="time"></div>
@@ -100,7 +109,7 @@
         </div>
         <div class="sydney">
           <div class="icon">
-            <img src="css/images/noun-sydney-1039855.svg" alt="" />
+            <img src="css/images/noun-sydney-1039855.svg" alt="sydney-icon" />
           </div>
           <h2>Sydney</h2>
           <div class="time"></div>
@@ -108,7 +117,7 @@
         </div>
         <div class="moscow">
           <div class="icon">
-            <img src="css/images/noun-moscow-2531844 1.svg" alt="" />
+            <img src="css/images/noun-moscow-2531844 1.svg" alt="moscow-icon" />
           </div>
           <h2>Moscow</h2>
           <div class="time"></div>
@@ -116,7 +125,10 @@
         </div>
         <div class="hong-kong">
           <div class="icon">
-            <img src="css/images/noun-beijing-1039730.svg" alt="" />
+            <img
+              src="css/images/noun-beijing-1039730.svg"
+              alt="hong-kong-icon"
+            />
           </div>
           <h2>Hong Kong</h2>
           <div class="time"></div>
@@ -124,7 +136,7 @@
         </div>
         <div class="dubai">
           <div class="icon">
-            <img src="css/images/dubai.svg" alt="" />
+            <img src="css/images/dubai.svg" alt="dubai-icon" />
           </div>
           <h2>Dubai</h2>
           <div class="time"></div>
@@ -132,7 +144,7 @@
         </div>
         <div class="bangkok">
           <div class="icon">
-            <img src="css/images/noun-bangkok-1039729.svg" alt="" />
+            <img src="css/images/noun-bangkok-1039729.svg" alt="bangkok-icon" />
           </div>
           <h2>Bangkok</h2>
           <div class="time"></div>
@@ -141,9 +153,16 @@
       </div>
     </div>
     <footer>
-      TICK-TACK WORLD was designed and coded by Diana Jimenez.
+      TICK-TACK WORLD was designed and coded by
+      <a href="https://github.com/DianaMJB" target="_blank">Diana Jimenez.</a>
       <br />
-      find the partially open-source code on Github!
+      find the open-source code on
+      <a
+        href="https://github.com/DianaMJB/World-timezones-clock"
+        target="_blank"
+      >
+        Github!
+      </a>
     </footer>
     <script src="javascript/index.js"></script>
   </body>
