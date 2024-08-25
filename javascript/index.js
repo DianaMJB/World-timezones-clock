@@ -45,8 +45,10 @@ function selectedTimezone(event) {
             "hh:mm [<strong>] A [</strong>]"
           )}</div>
           <div class="date">${timezoneTime.format("MMM Do YYYY")}</div>
-          <br/>
+          
           <div class="message"><small><em>The city displayed above, represents its entire time zone.</em></small></div>
+          <br/>
+          <div><a href="index.html"><strong>BACK TO HOME PAGE 👈🏻<strong></a>
         </div>
   `;
 }

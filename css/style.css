@@ -27,6 +27,9 @@ select:hover {
   border-radius: 10px;
   background-color: aliceblue;
 }
+#current-location-text {
+  display: inline-block;
+}
 #currentCity {
   font-weight: 600;
   font-size: larger;
@@ -53,10 +56,9 @@ select:hover {
   margin: 13px 12px 10px;
   background-color: aliceblue;
   border-radius: 10px;
+  cursor: url("images/planet.jpeg") 0 0, ew-resize;
 }
-.principal-cities-section:hover {
-  cursor: grab;
-}
+
 .principal-cities-section > div {
   margin-bottom: 15px;
 }
@@ -75,6 +77,7 @@ h2 {
   margin-bottom: 5px;
   color: rgb(239, 81, 33);
 }
+
 .date {
   min-width: 140px;
 }
